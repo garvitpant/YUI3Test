@@ -20,6 +20,13 @@
     <url-pattern>/DataController</url-pattern>
   </servlet-mapping>
   
+  
+  <servlet>
+    <display-name>JSON Service</display-name>
+    <servlet-name>JSON Service</servlet-name>
+    <servlet-class>com.wfg.wria.DataController</servlet-class>
+  </servlet>
+  
   <servlet>
     <servlet-name>Jersey REST Service</servlet-name>
     <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
@@ -32,6 +39,10 @@
   <servlet-mapping>
     <servlet-name>Jersey REST Service</servlet-name>
     <url-pattern>/api/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JSON Service</servlet-name>
+    <url-pattern>/json/*</url-pattern>
   </servlet-mapping>
   
 </web-app>
